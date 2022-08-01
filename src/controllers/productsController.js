@@ -12,12 +12,12 @@ const controller = {
     detail: (req, res) => {
         const product = productModel.find(req.params.id)
         console.log("------------ESTOY EN DETAIL----------------------")
-        console.log(product)
-        console.log(product.image[0])
+   //     console.log(product)
+   //     console.log(product.image[0])
         // COn este veo las otras fotos por eso el índice empieza en UNO Esto NO SIRVE !!!
         console.log("VEO LAS SIGUIENTES FOTOS")
         for (let i = 1; i < (product.image).length; i++) {
-            console.log(product.image[i])
+    //        console.log(product.image[i])
 
         }
         res.render('detail', {
@@ -57,6 +57,9 @@ const controller = {
        
 
         const resultadosValidaciones = validationResult(req);
+         console.log(resultadosValidaciones);
+       
+
 
         if (!resultadosValidaciones.isEmpty())
             console.log("-------- my body -------------------")

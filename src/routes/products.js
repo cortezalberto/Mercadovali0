@@ -6,7 +6,8 @@ const router = express.Router();
 const productsController = require('../controllers/productsController');
 const upload = require('../middleware/middlemulter')
 const validacion = require('../middleware/validatorProducts')
-
+const mr1 = require('../middleware/middleRuta1')
+const mr2 = require('../middleware/middleRuta2')
 
 /*** GET ALL PRODUCTS ***/ 
 //router.get('/', productsController.index); 
@@ -21,7 +22,7 @@ router.post('/', upload.array('image'), validacion , productsController.store);
 router.get('/detail/:id', productsController.detail); 
 
 /*** EDIT ONE PRODUCT ***/ 
-router.get('/edit/:id', productsController.edit); 
+router.get('/edit/:id', mr1 , mr2 , productsController.edit); 
 router.put('/edit/:id', upload.array('image'), productsController.update); 
 
 

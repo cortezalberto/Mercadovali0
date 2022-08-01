@@ -61,38 +61,6 @@
    "imgProduct_1659277647881hola.jpg"
   ],
   "id": 5
- },
- {
-  "name": "p",
-  "price": "",
-  "discount": "11",
-  "category": "in-sale",
-  "description": "nnn",
-  "image": [
-   "imgProduct_1659277905974hola.jpg"
-  ],
-  "id": 6
- },
- {
-  "name": "z",
-  "price": "",
-  "discount": "11",
-  "category": "visited",
-  "description": "ssss",
-  "image": [
-   "imgProduct_1659278146133hola.jpg"
-  ],
-  "id": 7
- },
- {
-  "name": "a",
-  "price": "",
-  "discount": "34",
-  "category": "in-sale",
-  "description": "sssss",
-  "image": [
-   "imgProduct_1659279053547hola.jpg"
-  ],
-  "id": 8
  }
+ 
 ]

@@ -13,7 +13,8 @@ const validacion = [
 	.isLength({min:4}).withMessage('Debe escribir como minimo 4 letras o caracteres.'),
 
 	body("image").custom((value, {req}) => {
-        if(req.files.length == 0)
+	
+       if(req.files.length == 0)
         {
             throw new Error("Amigo, Debes subir al menos una imagen:")
         }
